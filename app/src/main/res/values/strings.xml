@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">DynamicTableViewDemo</string>
+
+    <string-array name="column_1">
+        <item>IF the payment is for …</item>
+        <item>Interest and dividend payments</item>
+        <item>Broker transactions\n\ </item>
+        <item>Barter exchange transactions and patronage\ndividends</item>
+        <item>Payments over $600 required to be reported and\ndirect sales over $5,000(1)</item>
+        <item>Payments made in settlement of payment card\nor third party network transactions</item>
+    </string-array>
+
+    <string-array name="column_2">
+        <item>THEN the payment is exempt for …</item>
+        <item>All exempt payee except for 7</item>
+        <item>Exempt payees 1 through 4 and 6 through 11 and all C corporations. S corporations must not enter a\ncode because they are exempt only for sales of noncovered securities acquired prior to 2012.</item>
+        <item>Exempt payees 1 through 4\n\ </item>
+        <item>Generally, exempt payees 1 through 5 (2)\n\ </item>
+        <item>Exempt payees 1 through 4\n\ </item>
+    </string-array>
+
+    <string-array name="table_2_column_1">
+        <item>IF the entity/person on line 1 is a …</item>
+        <item>&#x2022; Corporation</item>
+        <item>&#x2022; Individual\n&#x2022; Sole proprietorship, or\n&#x2022; Single-member limited liability company (LLC) owned by an individual and disregarded\nfor U.S. federal tax purposes.</item>
+        <item>&#x2022; LLC treated as a partnership for U.S. federal tax purposes,\n&#x2022; LLC that has filed Form 8832 or 2553 to be taxed as a corporation, or\n&#x2022; LLC that is disregarded as an entity separate from its owner but the owner is another\nLLC that is not disregarded for U.S. federal tax purposes.</item>
+        <item>&#x2022; Partnership</item>
+        <item>&#x2022; Trust/estate</item>
+    </string-array>
+
+    <string-array name="table_2_column_2">
+        <item>THEN check the box for the …</item>
+        <item>Corporation</item>
+        <item>Individual/sole proprietor or single member LLC\n\ \n\ \n\ </item>
+        <item>Limited liability company and enter the appropriate tax classification. (P= \nPartnership; C= C corporation; or S= S corporation)\n\ \n\ </item>
+        <item>Partnership</item>
+        <item>Trust/estate</item>
+    </string-array>
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableLayout
+            android:id="@+id/table_main"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:stretchColumns="*" >
+        </TableLayout>
+    </HorizontalScrollView>
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Alert" />
+    </LinearLayout>
+</ScrollView>
+<!--<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:stretchColumns="*">-->
+<!--    <TableRow android:background="@drawable/border">-->
+<!--        <TextView-->
+<!--            android:background="@drawable/header_boarder"-->
+<!--            android:text="IF the payment is for ..."-->
+<!--            android:padding="3dip"-->
+<!--            android:gravity="center"-->
+<!--            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>-->
+<!--        <TextView-->
+<!--            android:background="@drawable/header_boarder"-->
+<!--            android:text="THEN the payment is exempt for ..."-->
+<!--            android:gravity="center"-->
+<!--            android:padding="3dip"-->
+<!--            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>-->
+<!--    </TableRow>-->
+
+<!--    <TableRow>-->
+<!--        <TextView-->
+<!--            android:text="Interest and dividend payments"-->
+<!--            android:background="@drawable/border"-->
+<!--            android:padding="3dip" />-->
+<!--        <TextView-->
+<!--            android:background="@drawable/border"-->
+<!--            android:text="All exempt payee except for 7"-->
+<!--            android:padding="3dip" />-->
+<!--    </TableRow>-->
+
+<!--    <TableRow>-->
+<!--        <TextView-->
+<!--            android:text="Broker transactions\n "-->
+<!--            android:background="@drawable/border"-->
+<!--            android:padding="3dip" />-->
+<!--        <TextView-->
+<!--            android:background="@drawable/border"-->
+<!--            android:text="Exempt payees 1 through 4 and 6 through 11 and all C corporations. S corporations must not enter a\ncode because they are exempt only for sales of noncovered securities acquired prior to 2012."-->
+<!--            android:padding="3dip" />-->
+<!--    </TableRow>-->
+
+<!--    <TableRow>-->
+<!--        <TextView-->
+<!--            android:text="Barter exchange transactions and patronage\ndividends"-->
+<!--            android:background="@drawable/border"-->
+<!--            android:padding="3dip" />-->
+<!--        <TextView-->
+<!--            android:background="@drawable/border"-->
+<!--            android:text="Exempt payees 1 through 4\n "-->
+<!--            android:padding="3dip" />-->
+<!--    </TableRow>-->
+
+<!--    <TableRow>-->
+<!--        <TextView-->
+<!--            android:background="@drawable/border"-->
+<!--            android:text="Payments over $600 required to be reported and\ndirect sales over $5,000(1)"-->
+<!--            android:padding="3dip" />-->
+<!--        <TextView-->
+<!--            android:background="@drawable/border"-->
+<!--            android:text="Generally, exempt payees 1 through 5 (2)\n "-->
+<!--            android:padding="3dip" />-->
+<!--    </TableRow>-->
+
+<!--    <TableRow>-->
+<!--        <TextView-->
+<!--            android:background="@drawable/border"-->
+<!--            android:text="Payments made in settlement of payment card\nor third party network transactions"-->
+<!--            android:padding="3dip" />-->
+<!--        <TextView-->
+<!--            android:background="@drawable/border"-->
+<!--            android:text="Exempt payees 1 through 4\n "-->
+<!--            android:padding="3dip" />-->
+<!--    </TableRow>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Show Alert" />-->
+<!--</TableLayout>-->
