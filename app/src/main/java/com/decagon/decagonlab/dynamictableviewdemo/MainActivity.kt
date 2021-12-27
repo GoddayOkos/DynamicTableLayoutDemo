@@ -12,7 +12,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val rootView: View = this.findViewById<View>(android.R.id.content).rootView
-        createTableLayout(rootView, 6, resources.getStringArray(R.array.column_1), resources.getStringArray(R.array.column_2))
+        createTableLayout(
+            hostingView = rootView,
+            numberOfRow = 6,
+            firstColumnItems = resources.getStringArray(R.array.column_1),
+            secondColumnItems = resources.getStringArray(R.array.column_2)
+        )
 
         findViewById<Button>(R.id.button).setOnClickListener {
             showAlertDialog()
@@ -22,7 +27,12 @@ class MainActivity : AppCompatActivity() {
     private fun showAlertDialog() {
         val view = layoutInflater.inflate(R.layout.scrollable_table_layout, null)
 
-        createTableLayout(view,6, resources.getStringArray(R.array.table_2_column_1), resources.getStringArray(R.array.table_2_column_2))
+        createTableLayout(
+            hostingView = view,
+            numberOfRow = 6,
+            firstColumnItems = resources.getStringArray(R.array.table_2_column_1),
+            secondColumnItems = resources.getStringArray(R.array.table_2_column_2)
+        )
 
         AlertDialog.Builder(this)
             .setView(view)

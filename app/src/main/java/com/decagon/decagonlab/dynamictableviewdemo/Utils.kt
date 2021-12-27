@@ -9,31 +9,34 @@ import android.widget.TableRow
 import android.widget.TextView
 import androidx.core.view.setPadding
 
-fun createTableLayout(view: View, numOfRow: Int, firstColumnText: Array<String>, secondColumnText: Array<String>) {
-    val tableLayout: TableLayout = view.findViewById(R.id.table_main)
-    val context = view.context
+fun createTableLayout(
+    hostingView: View,
+    numberOfRow: Int,
+    firstColumnItems: Array<String>,
+    secondColumnItems: Array<String>
+) {
+    val tableLayout: TableLayout = hostingView.findViewById(R.id.table_main)
+    val context = hostingView.context
 
     val tableHeaderRow = TableRow(context).apply {
         setBackgroundResource(R.drawable.border)
     }
 
-    val tableHeaderFirstColumn = createTableHeader(context, firstColumnText[0])
+    val tableHeaderFirstColumn = createTableHeader(context, firstColumnItems[0])
     tableHeaderRow.addView(tableHeaderFirstColumn)
 
-    val tableHeaderSecondColumn = createTableHeader(context, secondColumnText[0])
+    val tableHeaderSecondColumn = createTableHeader(context, secondColumnItems[0])
     tableHeaderRow.addView(tableHeaderSecondColumn)
-
     tableLayout.addView(tableHeaderRow)
 
-    for (i in 1 until numOfRow) {
+    for (i in 1 until numberOfRow) {
         val tableRow = TableRow(context)
 
-        val firstColumnTextView = createTableBody(context, firstColumnText[i])
+        val firstColumnTextView = createTableBody(context, firstColumnItems[i])
         tableRow.addView(firstColumnTextView)
 
-        val secondColumnTextView = createTableBody(context, secondColumnText[i])
+        val secondColumnTextView = createTableBody(context, secondColumnItems[i])
         tableRow.addView(secondColumnTextView)
-
         tableLayout.addView(tableRow)
     }
 }
