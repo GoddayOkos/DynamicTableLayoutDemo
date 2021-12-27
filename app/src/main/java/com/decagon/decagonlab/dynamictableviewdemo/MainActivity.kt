@@ -10,8 +10,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val rootView: View = this.findViewById<View>(android.R.id.content).rootView
 
+        val rootView: View = this.findViewById<View>(android.R.id.content).rootView
         createTableLayout(rootView, 6, resources.getStringArray(R.array.column_1), resources.getStringArray(R.array.column_2))
 
         findViewById<Button>(R.id.button).setOnClickListener {
