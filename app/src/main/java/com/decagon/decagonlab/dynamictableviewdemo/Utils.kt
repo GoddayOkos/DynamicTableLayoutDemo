@@ -9,6 +9,8 @@ import android.widget.TableRow
 import android.widget.TextView
 import androidx.core.view.setPadding
 
+const val PADDING_DP = 5
+
 fun createTableLayout(
     hostingView: View,
     numberOfRow: Int,
@@ -52,9 +54,8 @@ private fun createTableHeader(context: Context, title: String): TextView {
 }
 
 private fun createTableBody(context: Context, title: String): TextView {
-    val paddingDp = 5
     val density = context.resources.displayMetrics.density
-    val paddingPixel = (paddingDp * density).toInt()
+    val paddingPixel = (PADDING_DP * density).toInt()
 
     return TextView(context).apply {
         text = title
